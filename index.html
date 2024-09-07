@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!--style-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Expense tracker </title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="expense-title">Expense Tracker</h1>
+
+        <!--Balance-->
+        <div class="balance">
+            <h1 id="balance">$0.00</h1>
+            <h4>Current Balance</h4>
+        </div>
+
+        <!--Income-Expense-->
+        <div class="inc-exp-container">
+
+
+            <div class="income">
+                <h2 id="income">$0.00<span class="bi bi-caret-up"></span></h2>
+                <h4>Income</h4>
+            </div>
+
+
+            <div class="expense">
+                <h2 id="expense">$0.00<span class="bi bi-caret-down"></span></h2>
+                <h4>Expense</h4>
+            </div>
+
+
+        </div>
+
+        <!--History-->
+
+        <div class="history">
+            <h2 class="title-history">History</h2>
+            <ul class="history-box" id="list"></ul>
+               
+        </div>
+
+        <!--Add Transaction-->
+
+        <div class="transaction">
+        <h2 class="transaction-title">Add New Transaction</h2>
+        <form action="#" class="transaction-form" id="form">
+            <input type="text" id="text" class="for-text" placeholder="Insert text here (eg. Salary)">
+        <input type="amount" id="amount" class="for-amount" placeholder="Insert text here (eg. Salary)">
+        <button>Add Transaction</button>
+        </form>
+        
+
+    </div>
+    
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js "></script>
+    <script src="./script.js"></script>
+</body>
+</html>
